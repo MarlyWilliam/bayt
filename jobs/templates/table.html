@@ -1,0 +1,16 @@
+<table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for job in jobs %}
+      <tr>
+        <td>{{ job.title }}</td>
+        <td>{{ job.location }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
